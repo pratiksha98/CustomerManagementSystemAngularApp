@@ -1,0 +1,12 @@
+<nav class="navbar navbar-light">
+    <a routerLink="/customers" class="navbar-brand">Customer Management System</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a [routerLink]="['customers/new']" class="nav-link">New Customer</a>
+      </li>
+      </ul>
+    <form class="form-inline" style="display:flex" #f="ngForm">
+      <input ngModel class="form-control mr-sm-2" name="age" type="number" placeholder="Search by age" aria-label="Search" required="">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="getCustomers(f.value.age)" [disabled]="!f.valid">Search</button>
+    </form>
+  </nav>

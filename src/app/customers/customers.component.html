@@ -1,0 +1,20 @@
+<div class="container customers-table">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Full Name</th>
+        <th scope="col">DOB</th>
+        <th scope="col">Profile Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="customer" *ngFor="let customer of customers$|async;let i = index" [routerLink]="['/customers', customer.id]">
+        <th scope="row">{{i+1}}</th>
+        <td>{{customer.fullName}}</td>
+        <td>{{customer.dateOfBirth | date:'yyyy-MM-dd'}}</td>
+        <td [innerHTML]="customer.profileImage"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

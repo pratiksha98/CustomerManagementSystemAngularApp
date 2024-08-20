@@ -1,0 +1,11 @@
+input.ng-invalid.ng-touched{
+    border:1px solid red
+  }
+  .new-customer{
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 60%;
+  }
+  .customer-input{
+    margin-bottom:1rem
+  }

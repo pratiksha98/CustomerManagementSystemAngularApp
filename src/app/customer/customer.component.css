@@ -1,0 +1,13 @@
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border: 1px solid #BDE8CA;
+  width: 50%;
+}
+.profileImage {
+  padding: 3rem;
+  background-color: #f2f2f2;
+  margin:0 1rem
+}

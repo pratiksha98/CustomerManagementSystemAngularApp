@@ -1,0 +1,7 @@
+.customer{
+    cursor: pointer;
+}
+.customers-table{
+    margin-top:2rem;
+    border: 1px solid #0D7C66;
+}
